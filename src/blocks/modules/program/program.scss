@@ -1,0 +1,132 @@
+.program {
+    position: relative;
+    background: #F8F2EC;
+    padding: 112px 0 163px;
+    @media screen and (max-width: 991px) {
+        padding: 60px 0 160px;
+    }
+    @media screen and (max-width: 600px) {
+        padding: 43px 0 160px;
+    }
+    .l-default {
+        &:last-child {
+            max-width: 1177px;
+        }
+    }
+
+    &__text {
+        padding: 24px 0;
+    }
+
+    &__title {
+        margin-bottom: 60px;
+
+        @media screen and (max-width: 991px) {
+            width: 100%;
+            margin-bottom: 31px;
+        }
+    }
+
+    &__text {
+        font-size: 24px;
+        line-height: 120%;
+        font-weight: 900;
+
+        @media screen and (max-width: 991px) {
+            width: 100%;
+        }
+
+        @media screen and (max-width: 600px) {
+            font-size: 20px;
+            padding: 0;
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        @media screen and (max-width: 991px) {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__item {
+        max-width: 387px;
+        padding: 24px 20px;
+        border-radius: 6px;
+
+        @media screen and (max-width: 991px) {
+            width: 50%;
+        }
+
+        @media screen and (max-width: 767px) {
+            width: 100%;
+            max-width: 100%;
+            padding: 24px 18px;
+        }
+
+        &:last-child {
+            max-width: 361px;
+
+            @media screen and (max-width: 767px) {
+                max-width: 100%;
+            }
+        }
+
+        &--white {
+            background: #fff;
+        }
+
+        &-title {
+            font-size: 24px;
+            line-height: 120%;
+            font-weight: 900;
+            text-align: center;
+            margin-bottom: 34px;
+
+            @media screen and (max-width: 600px) {
+                font-size: 20px;
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    &__list {
+        &-item {
+            display: flex;
+            align-items: flex-start;
+            font-size: 19px;
+            line-height: 120%;
+            margin-bottom: 30px;
+            @media screen and (max-width: 600px) {
+                font-size: 16px;
+                margin-bottom: 11px;
+            }
+
+            &:before {
+                content: url('.././img/svg/plus.svg');
+                margin-right: 10px;
+                padding-top: 3px;
+            }
+        }
+    }
+
+    &__text {
+        width: 215px;  
+    }
+
+    &__back {
+        position: absolute;
+        left: -250px;
+        bottom: 0;
+
+        @media screen and (max-width: 600px) {
+            left: -340px;
+            bottom: -2px;
+            width: 622px;
+            height: 292px;
+        }
+    }
+}

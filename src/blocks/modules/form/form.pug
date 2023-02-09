@@ -1,0 +1,13 @@
+form.form
+    .form__inputs
+        .form__input
+            input(type="text" name="name" placeholder="Имя" required)
+        .form__input
+            input(type="email" name="email" placeholder="E-mail" required)
+        .form__input
+            input(type="tel" name="phone" placeholder="Телефон" required)
+    .form__policy Отправляя заявку, вы принимаете условия <a href="">договора оферты</a> и даете согласие на обработку своих персональных данных в соответствии с <a href="">политикой конфиндециальности</a>
+    button.form__btn.btn.btn--blue(type="submit")
+        .btn__text Участвовать
+        .btn__icon
+            img.lazy(data-src="img/svg/like.svg", alt="") 

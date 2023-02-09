@@ -1,0 +1,74 @@
+-
+    const for_whom_items_1 = [
+        {
+            img: '1',
+            text: 'ДОЛЛАРЫ',
+        },
+        {
+            img: '2',
+            text: 'НЕДВИЖИМОСТЬ',
+        },
+        {
+            img: '3',
+            text: 'НАЛИЧНЫЕ',
+        },
+        {
+            img: '4',
+            text: 'ДЕПОЗИТ',
+        }
+    ]
+
+    const for_whom_items_2 = [
+        {
+            img: '5',
+            text: 'АКЦИИ',
+        },
+        {
+            img: '6',
+            text: 'ОБЛИГАЦИИ',
+        },
+        {
+            img: '7',
+            text: 'КРИПТОВАЛЮТА',
+        },
+        {
+            img: '8',
+            text: 'ПИФ',
+        }
+    ]
+section.for-whom
+    .for-whom__back 
+        img(src="img/svg/for-whom/back.svg", alt="")
+    .for-whom__dots 
+        img(src="img/svg/dots.svg", alt="")
+    .l-default
+        h2.for-whom__title.title.title--h2 Для кого? 
+        .for-whom__points
+            .for-whom__point
+                .circle
+                .for-whom__point-number 1
+                .for-whom__point-text У тебя есть капитал и на коррекции тебя хорошенько потрясло, но ты не знаешь что делать со всем этим дальше
+            .for-whom__point
+                .circle
+                .circle
+                .for-whom__point-number 2
+                .for-whom__point-text У тебя есть капитал, но ты хранишь его либо на депозите, либо в кэше и ты хочешь начать инвестировать его в акции или облигации
+        .for-whom__maybe
+            .for-whom__maybe-text Может...
+            .for-whom__maybe-img    
+                +webp(['for-whom/smile'], 'png', 'lazy') 
+            .for-whom__maybe-text Или...
+        .for-whom__bottom
+            .for-whom__items
+                each item_1 in for_whom_items_1
+                    .for-whom__item
+                        .for-whom__item-img
+                            img.lazy(data-src="img/svg/for-whom/" + item_1.img + ".svg", alt="")
+                        .for-whom__item-text= item_1.text
+            .for-whom__mobile
+            .for-whom__items
+                each item_2 in for_whom_items_2
+                    .for-whom__item
+                        .for-whom__item-img
+                            img.lazy(data-src="img/svg/for-whom/" + item_2.img + ".svg", alt="")
+                        .for-whom__item-text= item_2.text

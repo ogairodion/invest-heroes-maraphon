@@ -1,0 +1,55 @@
+.bottom {
+    position: relative;
+    padding: 27px 0 133px;
+    @media screen and (max-width: 600px) {
+        padding: 0 0 50px;
+    }
+
+    .l-default {
+        max-width: 951px;
+    }
+
+    &__wrapper {
+        display: flex;
+        @media screen and (max-width: 767px) {
+            flex-direction: column;
+        }
+    }
+
+    &__img {
+        min-width: 184px;
+        margin-right: 65px;
+
+        @media screen and (max-width: 600px) {
+            max-width: 184px;
+            margin-right: 0;
+            margin-left: 80px;
+            margin-top: -30px;
+            margin-bottom: 27px;
+        }
+    }
+
+    &__form {
+        max-width: 555px;
+        margin-top: 70px;
+        @media screen and (max-width: 600px) {
+            margin-top: 0;
+        }
+        &-title {
+            margin-bottom: 42px;
+            @media screen and (max-width: 600px) {
+                margin-bottom: 27px;
+            }
+        }
+    }
+
+    &__back {
+        position: absolute;
+        left: -300px;
+        bottom: -100px;
+
+        @media screen and (max-width: 600px) {
+            display: none;
+        }
+    }
+}

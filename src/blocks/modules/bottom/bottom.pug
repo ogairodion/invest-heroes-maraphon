@@ -1,0 +1,10 @@
+section.bottom#bottom
+    .bottom__back 
+        img(src="img/svg/bottom/back.svg", alt="")
+    .l-default
+        .bottom__wrapper  
+            .bottom__img 
+                +webp(['bottom/smile'], 'png', 'lazy')
+            .bottom__form
+                h2.bottom__form-title.title.title--h2 Участвовать
+                include ../form/form.pug

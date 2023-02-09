@@ -1,0 +1,64 @@
+.form {
+    &__btn {
+        font-size: 20px;
+        line-height: 120%;
+        padding: 8px 18px 8px 48px;
+        margin-right: 30px;
+
+        .btn__text {
+            margin-right: 27px;
+        }
+    }
+
+    &__inputs {
+        margin-bottom: 44px;
+        @media screen and (max-width: 600px) {
+            margin-bottom: 35px;
+        }
+    }
+
+    &__input {
+        margin-bottom: 44px;
+        @media screen and (max-width: 600px) {
+            margin-bottom: 35px;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        input {
+            width: 100%;
+            font-size: 18px;
+            line-height: 1;
+            border-bottom: 1px solid #1B3460;  
+            padding-bottom: 7px; 
+            background: none;
+
+            @media screen and (max-width: 600px) {
+                font-size: 16px;
+            }
+        }
+    }
+
+    &__policy {
+        font-size: 13px;
+        margin-bottom: 44px;
+        @media screen and (max-width: 600px) {
+            margin-bottom: 20px;
+        }
+        a {
+            position: relative;
+            white-space: nowrap;
+
+            &:after {
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                height: .5px;
+                width: 100%;
+                background: #1B3460;
+            }
+        }
+    }
+}
